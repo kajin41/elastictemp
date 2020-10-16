@@ -1,0 +1,112 @@
+    1  sudo modprobe w1-gpio
+    2  sudo modprobe w1-therm
+    3  cd /sys/bus/w1/devices/
+    4  ls
+    5  sudo reboot
+    6  cd /sys/bus/w1/devices/
+    7  ls
+    8  sudo modprobe w1-gpio
+    9  sudo modprobe w1-therm
+   10  cd /sys/bus/w1/devices/
+   11  ls
+   12  sudo nano /boot/config.txt
+   13  sudo reboot
+   14  cd /sys/bus/w1/devices/
+   15  ls
+   16  cd ~
+   17  mkdir temperature
+   18  cd temperature/
+   19  nano temperature.py
+   20  nano probelist.py
+   21  cd /sys/bus/w1/devices/
+   22  ls
+   23  cat 28-0301a279fbb7/w1_slave 
+   24  cat 28-0301a279d325/w1_slave 
+   25  cat 28-0301a279fbb7/w1_slave 
+   26  cat 28-0301a279d325/w1_slave 
+   27  cat 28-0301a279fbb7/w1_slave 
+   28  cd ~/temperature/
+   29  nano probelist.py
+   30  nano temperature.py
+   31  sudo python3 temperature.py 
+   32  sudo pip3 install elasticsearch
+   33  sudo python3 -m pip install elasticsearch
+   34  pip
+   35  python3 --version
+   36  sudo apt-get install python3-pip
+   37  sudo apt-get update
+   38  sudo apt-get install python3-pip
+   39  sudo python3 -m pip install elasticsearch
+   40  sudo python3 temperature.py 
+   41  ls
+   42  nano temperature.py
+   43  sudo python3 temperature.py 
+   44  ls
+   45  cat tempprobe.log 
+   46  date
+   47  timedatectl
+   48  sudo timedatectl set-timezone America/New_York
+   49  timedatectl
+   50  sudo python3 temperature.py 
+   51  sudo crontab -e
+   52  sudo reboot
+   53  cd temperature/
+   54  nano temperature.py 
+   55  nano probelist
+   56  nano probelist.py 
+   57  nano temperature.py 
+   58  tail tempprobe.log 
+   59  htop
+   60  sudo python3 temperature.py 
+   61  sudo reboot
+   62  htop
+   63  sudo crontab -e
+   64  ls /home/
+   65  ls /home/pi/
+   66  sudo crontab -e
+   67  ls
+   68  cd scripts/
+   69  ls
+   70  cd w
+   71  cd ..
+   72  sudo nano /etc/systemd/system/tempprobe.service
+   73  systemctl start tempprobe
+   74  sudo systemctl start tempprobe
+   75  sudo nano /etc/systemd/system/tempprobe.service
+   76  sudo systemctl start tempprobe
+   77  sudo nano /etc/systemd/system/tempprobe.service
+   78  sudo systemctl start tempprobe
+   79  sudo systemctl status tempprobe
+   80  sudo systemctl enable tempprobe
+   81  sudo reboot
+   82  sudo systemctl status tempprobe
+   83  sudo systemctl start tempprobe
+   84  sudo systemctl status tempprobe
+   85  ls /sys/bus/w1/devices/
+   86  sudo systemctl status tempprobe
+   87  sudo reboot
+   88  sudo systemctl status tempprobe
+   89  cd temperature/
+   90  ls /sys/bus/w1/devices/
+   91  sudo systemctl start tempprobe
+   92  sudo systemctl status tempprobe
+   93  ls /sys/bus/w1/devices/
+   94  sudo systemctl start tempprobe
+   95  history | grep service
+   96  sudo nano /etc/systemd/system/tempprobe.service
+   97  sudo systemctl status tempprobe
+   98  sudo reboot
+   99  sudo systemctl status tempprobe
+  100  ls /sys/bus/w1/devices/
+  101  ls
+  102  cd temperature/
+  103  ls
+  104  history
+  105  history > hist.txt
+
+
+
+
+
+
+@reboot python3 /home/pi/temperature/temperature.py &
